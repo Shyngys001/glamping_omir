@@ -115,6 +115,19 @@ i{
         padding: 50px;
         width: 100%;
         align-items: center;
-    
+    }
+}
+
+
+
+@media(max-height: 450px){  
+    .shyn_Page1Foot1{
+        padding: 50px;
+        width: 30%;
+        align-items: center;
+    }
+
+    .qr{
+        width: 60%;
     }
 }
