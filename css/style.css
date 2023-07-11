@@ -319,7 +319,7 @@ footer {
     position: fixed;
     z-index: 2;
     top: 0; left: 0; right: 0; bottom: 0;
-    width: 100%;
+    width: 80%;
     height: 280px;
     background-color: var(--main-color);
     border-radius: 0 0 20px 20px;
@@ -383,6 +383,16 @@ footer {
 }
 
 @media screen and (max-width: 820px) {
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
   h1 {
     font-size: 40px;
     font-weight: 800;
