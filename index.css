@@ -1,0 +1,103 @@
+body{
+    background-image: url('../img/pic1.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#sec1{
+    /* background-image: url('../img/pic1.JPG'); */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.shyn_OmirGlamping{
+    font-size: 50px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    padding-top: 60px;
+
+}
+
+.shyn_main{
+    width: 100%;
+    position: relative;
+}
+
+.shyn_main img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.shyn_Page1Foot{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shyn_Page1Foot1{
+    padding: 50px;
+    width: 15%;
+    align-items: center;
+
+}
+
+
+.shyn_Page1Foot1elements{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.shyn_Page1Foot1elements p{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+i{
+    font-size: 150%;
+}
+
+.qr_img{
+    width: 100%;
+    position: relative;
+}
+
+.qr{
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.shyn_Page1Foot2{
+    width: 150px;
+    right: 0;
+    text-align: center;
+    padding-right: 50px;
+    align-items: center;
+}
+
+
+@media(max-width: 800px){  
+    .shyn_Page1Foot1elements p{
+        font-size: 11px;
+        font-weight: 100;
+    }
+
+    .shyn_Page1Foot1{
+        width: 80%;
+    }
+    
+    .shyn_Page1Foot2{
+        align-items: center;
+    }
+}
