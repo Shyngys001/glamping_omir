@@ -100,4 +100,21 @@ i{
     .shyn_Page1Foot2{
         align-items: center;
     }
+
+    .shyn_Page1Foot1{
+        padding: 50px;
+        width: 25%;
+        align-items: center;
+    
+    }
+}
+
+
+@media(max-width: 450px){  
+    .shyn_Page1Foot1{
+        padding: 50px;
+        width: 100%;
+        align-items: center;
+    
+    }
 }
