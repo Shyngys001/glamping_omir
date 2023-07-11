@@ -1,102 +1,86 @@
-body{
-    background-image: url('../img/pic1.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#sec1{
-    /* background-image: url('../img/pic1.JPG'); */
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    position: relative;
-}
-
-
-.shyn_OmirGlamping{
-    font-size: 50px;
-    position: relative;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    padding-top: 60px;
-
-}
-
-.shyn_main{
-    width: 100%;
-    position: relative;
-}
-
-.shyn_main img{
-    width: 100%;
-    object-fit: cover;
-}
-
-.shyn_Page1Foot{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.shyn_Page1Foot1{
-    padding: 50px;
-    width: 15%;
-    align-items: center;
-
-}
-
-
-.shyn_Page1Foot1elements{
-    display: flex;
-    gap: 10px;
-    align-items: start;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-}
-
-.shyn_Page1Foot1elements p{
-    font-size: 16px;
-    font-weight: 100;
-}
-
-i{
-    font-size: 150%;
-}
-
-.qr_img{
-    width: 100%;
-    position: relative;
-}
-
-.qr{
-    width: 100%;
-    padding-top: 50px;
-    margin-top: 20px;
-}
-
-.shyn_Page1Foot2{
-    width: 150px;
-    right: 0;
-    text-align: center;
-    padding-right: 50px;
-    align-items: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omir Glamping</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!-- ========================================>> header <<======================================== -->
+     <header>
+        <!-- <a id="arch--logo" href="#arch--first-content"><img src="logo-icon.svg" alt="logo"><p>bhf</p></a> -->
+  
+        <nav>
+          <a href="#arch--first-content">Главное</a>
+          <a href="#collection">Бронировать</a>
+          <a href="#s_page-space">Цены</a>
+          <a href="#p3">Туры</a>
+          <a href="#footer">Контакты</a>
+        </nav>
+  
+        <div id="arch--burger">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #054c73;" onclick="displayWindow()"></i>
+          <div id="arch--burger-content">
+            <button id="arch--close-burger" onclick="closeWindow()">
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+            </button>
+            <div>
+              <a href="#arch--first-content" onclick="closeWindow()">Главное</a>
+            </div>
+            <div>
+              <a href="#collection" onclick="closeWindow()">Бронировать</a>
+            </div>
+            <div>
+              <a href="#s_page-space" onclick="closeWindow()">Цены</a>
+            </div>
+            <div>
+              <a href="#p3" onclick="closeWindow()">Туры</a>
+            </div>
+            <div>
+              <a href="#arch--contact" onclick="closeWindow()">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- ========================================>> /header <<======================================== -->
 
 
-@media(max-width: 800px){  
-    .shyn_Page1Foot1elements p{
-        font-size: 11px;
-        font-weight: 100;
-    }
-
-    .shyn_Page1Foot1{
-        width: 80%;
-    }
+    <section id="sec1">
+        <div style="width: 50%;">
+            <p class="shyn_OmirGlamping">O’MIR GLAMPING</p>
+        </div>
+        <div class="shyn_main">
+        </div>
+        <div class="shyn_Page1Foot">
+            <div class="shyn_Page1Foot1">
+                <div class="shyn_Page1Foot1elements">
+                    <i class='fa-solid fa-location-dot' style="color: gray;"></i>
+                    <p>Республика Казахстан
+                        Мангистауская область,
+                        Мунайлинский район,
+                        местность Кызылкум,
+                        участок 2/27
+                    </p>
+                </div>
+                <div class="shyn_Page1Foot1elements">
+                    <i class='fa-solid fa-phone' style="color: gray;"></i>
+                    <p>+7 707 288 88 90
+                    </p>
+                </div>
+            </div>
+            <div class="shyn_Page1Foot2">
+                <div class="qr_img">
+                    <img class="qr" src="img/QR.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     
-    .shyn_Page1Foot2{
-        align-items: center;
-    }
-}
+</body>
+<script src="js/index.js"></script>
+<script src="js/javascript.js"></script>
+
+</html>
