@@ -304,6 +304,11 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+  header {
+    padding: 2% 5%;
+
+  }
+
   nav {
     display: none;
   }
@@ -445,5 +450,12 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+
+@media(max-height: 450px){  
+  header {
+    padding: 3% 5%;
   }
 }
