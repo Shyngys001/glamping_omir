@@ -2,9 +2,8 @@
   --size: 1vw + 1vh;
   --white: #ffffff;
   --gray: #333333;
-  
-  --main-color: #DFE9F4;
-  --content-color: #054C73;
+  --main-color: #f7f7f7;
+  --content-color: #9fa2a4;
 }
 
 * {
