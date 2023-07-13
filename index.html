@@ -1,123 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Omir Glamping</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-     <!-- ========================================>> header <<======================================== -->
-     <header>
-        <a id="arch--logo" href="#sec1"><img src="img/output-onlinepngtools (2).png" alt="logo"></a>
-  
-        <nav>
-          <a id="gen" href="#arch--first-content">Главное</a>
-          <a id="book" href="#collection">Бронировать</a> 
-          <a id="price" href="#s_page-space">Цены</a>
-          <a id="tour" href="#p3">Туры</a>
-          <a id="contact" href="#footer">Контакты</a>
 
-        </nav>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="dropdown">
-          <button class="dropbtn" id="languageBtn">Ru</button>
-          <div class="dropdown-content">
-              <a href="#" onclick="setLanguage('Kz')">Kz</a>
-              <a href="#" onclick="setLanguage('En')">En</a>
-              <a href="#" onclick="setLanguage('Ru')">Ru</a>
-          </div>
-        </div>
+    <!-- ========================================>> Arch link <<======================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/arch.css">
+    <!-- ========================================>> /Arch link <<======================================== -->
   
-        <div id="arch--burger">
-          <i class="fa-solid fa-bars fa-2xl" style="color: var(--gold);" onclick="displayWindow()"></i>
-          <div id="arch--burger-content">
-            <button id="arch--close-burger" onclick="closeWindow()">
-              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
-            </button>
-            <div>
-              <a id="gen" href="#arch--first-content" onclick="closeWindow()">Главное</a>
-            </div>
-            <div>
-              <a id="book" href="#collection" onclick="closeWindow()">Бронировать</a>
-            </div>
-            <div>
-              <a id="price" href="#s_page-space" onclick="closeWindow()">Цены</a>
-            </div>
-            <div>
-              <a id="tour" href="#p3" onclick="closeWindow()">Туры</a>
-            </div>
-            <div>
-              <a id="contact" href="#arch--contact" onclick="closeWindow()">Контакты</a>
-            </div>
+  </head>
+
+  <body id="body">
+
+    <!-- ========================================>> header <<======================================== -->
+
+    <header>
+      <a id="arch--logo" href="#sec1"><img src="img/output-onlinepngtools (2).png" alt="logo"/></a>
+
+      <nav>
+        <a id="gen" href="#arch--first-content">Главное</a>
+        <a id="book" href="#collection">Бронировать</a>
+        <a id="price" href="#s_page-space">Цены</a>
+        <a id="tour" href="#p3">Туры</a>
+        <a id="contact" href="#footer">Контакты</a>
+      </nav>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="dropdown">
+        <button class="dropbtn" id="languageBtn">Ru</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="setLanguage('Kz')">Kz</a>
+          <a href="#" onclick="setLanguage('En')">En</a>
+          <a href="#" onclick="setLanguage('Ru')">Ru</a>
+        </div>
+      </div>
+
+      <div id="arch--burger">
+        <i class="fa-solid fa-bars fa-2xl" style="color: var(--gold)" onclick="displayWindow()"></i>
+        <div id="arch--burger-content">
+          <button id="arch--close-burger" onclick="closeWindow()">
+            <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff"></i>
+          </button>
+          <div>
+            <a id="gen" href="#arch--first-content" onclick="closeWindow()">Главное</a>
+          </div>
+          <div>
+            <a id="book" href="#collection" onclick="closeWindow()">Бронировать</a>
+          </div>
+          <div>
+            <a id="price" href="#s_page-space" onclick="closeWindow()">Цены</a>
+          </div>
+          <div>
+            <a id="tour" href="#p3" onclick="closeWindow()">Туры</a>
+          </div>
+          <div>
+            <a id="contact" href="#arch--contact" onclick="closeWindow()">Контакты</a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+
     <!-- ========================================>> /header <<======================================== -->
-
 
     <section id="sec1">
       <video autoplay loop muted>
-        <source src="https://dl.dropboxusercontent.com/s/rlvs7h8ogudxx3u/omirFashionWeek02.mp4" type="video/mp4">
+        <source src="https://dl.dropboxusercontent.com/s/rlvs7h8ogudxx3u/omirFashionWeek02.mp4" type="video/mp4"/>
       </video>
-      
-        <div style="width: 50%;">
-            <p class="shyn_OmirGlamping">O’MIR GLAMPING</p>
+
+      <div style="width: 50%">
+        <p class="shyn_OmirGlamping">O’MIR GLAMPING</p>
+      </div>
+
+      <div class="shyn_main"></div>
+      <div class="shyn_Page1Foot">
+        <div class="shyn_Page1Foot1">
+          <div class="shyn_Page1Foot1elements">
+            <i class="fa-solid fa-location-dot" style="color: gray"></i>
+            <p id="shyn_Page1Foot_p">
+              Республика Казахстан Мангистауская область, Мунайлинский район,
+              местность Кызылкум, участок 2/27
+            </p>
+          </div>
+          <div class="shyn_Page1Foot1elements">
+            <a href="tel:87072888890">
+              <i class="fa-solid fa-phone" style="color: gray"></i>
+            </a>
+            <a href="tel:87072888890">
+              <p id="shyn_Page1Foot1_num">+7 707 288 88 90</p>
+            </a>
+          </div>
         </div>
-        <div class="shyn_main">
+        <div class="shyn_Page1Foot2">
+          <div class="qr_img">
+            <img class="qr" src="img/qrr.png" alt="" />
+          </div>
         </div>
-        <div class="shyn_Page1Foot">
-            <div class="shyn_Page1Foot1">
-                <div class="shyn_Page1Foot1elements">
-                    <i class='fa-solid fa-location-dot' style="color: gray;"></i>
-                    <p id="shyn_Page1Foot_p">Республика Казахстан
-                        Мангистауская область,
-                        Мунайлинский район,
-                        местность Кызылкум,
-                        участок 2/27
-                    </p>
-                </div>
-                <div class="shyn_Page1Foot1elements">
-                  <a href="tel:87072888890">
-                    <i class='fa-solid fa-phone' style="color: gray;"></i>
-                  </a>
-                  <a href="tel:87072888890">
-                    <p id="shyn_Page1Foot1_num">+7 707 288 88 90
-                    </p>
-                  </a>
-                </div>
-            </div>
-            <div class="shyn_Page1Foot2">
-                <div class="qr_img">
-                    <img class="qr" src="img/qrr.png" alt="">
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section id="shyn_sec2">
       <div class="shyn_otzyvy">
         <div class="shyn_otzyvy1">
-            <i  id="shyn_i" class='fas fa-map-marked'></i>
-            <p>Идеальное место для медитацииб снять стрессб расствориться в природеб слушать пение птиц...</p>
+          <i id="shyn_i" class="fas fa-map-marked"></i>
+          <p>
+            Идеальное место для медитацииб снять стрессб расствориться в
+            природеб слушать пение птиц...
+          </p>
         </div>
         <div class="shyn_otzyvy1">
-          <i  id="shyn_i"class='fas fa-campground'></i>
-          <p>Идеальное место для медитацииб снять стрессб расствориться в природеб слушать пение птиц...</p>
+          <i id="shyn_i" class="fas fa-campground"></i>
+          <p>
+            Идеальное место для медитацииб снять стрессб расствориться в
+            природеб слушать пение птиц...
+          </p>
         </div>
         <div class="shyn_otzyvy1">
-          <i id="shyn_i" class='fas fa-first-aid'></i>
-          <p>Идеальное место для медитацииб снять стрессб расствориться в природеб слушать пение птиц...</p>
+          <i id="shyn_i" class="fas fa-map-marked"></i>
+          <p>
+            Идеальное место для медитацииб снять стрессб расствориться в
+            природеб слушать пение птиц...
+          </p>
         </div>
       </div>
     </section>
-  
+
+
+    <!-- ========================================>> Arch code <<======================================== -->
+
+    <div id="arch--switch-block">
+      <img class="arch--swipe-page-logo" src="img/logo-colored.svg" alt="">
+    </div>
     
-</body>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<script src="js/index.js"></script>
-<script src="js/javascript.js"></script>
+    <button id="arch--switch-activity-page-button">
+      <i class="fa-solid fa-arrow-down fa-2xl" style="color: #ffffff;"></i>
+    </button>
+
+    <section id="arch--activity-section">
+      <div id="arch--activity-section-block">
+        <div class="arch--background-slider">
+          <div class="arch--slide-track-up-1">
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img1.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img2.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img3.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img4.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img5.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img1.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img2.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img3.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img4.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img5.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img1.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img2.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img3.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img4.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img5.jpg" alt=""></div>
+          </div>
+          <div class="arch--slide-track-down-1">
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img6.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img7.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img8.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img9.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img10.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img6.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img7.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img8.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img9.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img10.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img6.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img7.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img8.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img9.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img10.jpg" alt=""></div>
+          </div>
+          <div class="arch--slide-track-up-2">
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img11.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img12.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img13.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img14.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img15.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img11.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img12.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img13.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img14.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img15.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img11.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img12.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img13.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img14.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img15.jpg" alt=""></div>
+          </div>
+          <div class="arch--slide-track-down-2">
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img16.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img17.png" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img18.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img19.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img20.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img16.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img17.png" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img18.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img19.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img20.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img16.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img17.png" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img18.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img19.jpg" alt=""></div>
+            <div class="arch--slide-item"><img class="arch--slide-image" src="img/img20.jpg" alt=""></div>
+          </div>
+        </div>
+    
+        <div id="arch--activity-info">
+          <div id="arch--activity-info-block">
+            <div id="arch--activity-info-title">
+              <img id="arch--info-logo" src="img/logo-colored-version-1.svg" alt="">
+              <div><hr></div>
+            </div>
+
+            <div id="arch--activity-info-block-content">
+              <ul id="arch--activity-info-block-content-list">
+                <div>
+                  <li id="arch--text-activities" class="arch--super-list arch--list">АКТИВНЫЙ ОТДЫХ</li>
+                  <ul>
+                    <li id="arch--text-yachting" class="arch--list arch--list-child">Яхтинг</li>
+                    <li id="arch--text-diving" class="arch--list arch--list-child">Дайвинг</li>
+                    <li id="arch--text-hydrocycle" class="arch--list arch--list-child">Гидроцикл/Квадроцикл</li>
+                    <li id="arch--text-hunting" class="arch--list arch--list-child">Подводная охота</li>
+                    <li id="arch--text-kayaking" class="arch--list arch--list-child">Каякинг</li>
+                    <li id="arch--text-serfing" class="arch--list arch--list-child">Скайсерфинг</li>
+                    <li id="arch--text-parachute" class="arch--list arch--list-child">Парашют</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <li id="arch--text-beach" class="arch--super-list arch--list">ПЛЯЖ</li>
+                  <ul>
+                    <li id="arch--text-volleyball" class="arch--list arch--list-child">Волейбольная площадка</li>
+                    <li id="arch--text-kino" class="arch--list arch--list-child">Кинотеатр под открытым небом</li>
+                    <li id="arch--text-playground" class="arch--list arch--list-child">Детская площадка</li>
+                    <li id="arch--text-yoga" class="arch--list arch--list-child">Йога</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <li id="arch--text-pool" class="arch--super-list arch--list">ЗОНА БАССЕЙНА</li>
+                  <li id="arch--text-bbq" class="arch--super-list arch--list">ГРИЛЬ И BBQ ЗОНА</li>
+                  <li id="arch--text-sauna" class="arch--super-list arch--list">СКАНДИНАВСКИЕ БАНИ</li>  
+                </div>              
+              </ul>
+            </div>
+  
+            <a id="arch--switch-price-page-link" href="#">
+              <p id="arch--text-price">Цены</p> <i class="fa-solid fa-arrow-right fa-lg arch--switch-price-page-link-arrow" style="color: #000000;"></i>
+            </a>
+          </div>
+        </div>
+  
+        <button id="arch--switch-home-page-button">
+          <i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================>> /Arch code <<======================================== -->
+
+  </body>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/javascript.js"></script>
+
+
+  <!-- ========================================>> Arch script <<======================================== -->
+  <script src="https://kit.fontawesome.com/b6b09ef856.js" crossorigin="anonymous"></script>
+  <script src="js/arch.js"></script>
+  <!-- ========================================>> /Arch script <<======================================== -->
 
 </html>
