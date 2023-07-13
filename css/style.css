@@ -4,6 +4,7 @@
   --gray: #333333;
   --main-color: #f7f7f7;
   --content-color: #9fa2a4;
+  --gold: rgb(192, 180, 89);
 }
 
 * {
@@ -49,7 +50,7 @@ h1 {
 }
 
 a {
-  color: var(--gray);
+  color: var(--gold);
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -91,8 +92,8 @@ nav a:hover {
 }
 
 #arch--logo img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 40px;
 }
 
 #arch--logo p {
@@ -215,6 +216,7 @@ nav a:hover {
 .arch--contact-content-title {
   font-size: 32px;
   font-weight: 700;
+
   color: var(--gray);
 }
 
@@ -391,7 +393,7 @@ footer {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 10;
-    padding: 5% 5%;
+    padding: 3% 5%;
     display: flex;
     align-items: center;
     background-color: var(--white);
@@ -422,7 +424,7 @@ footer {
     width: 50%;
     text-align: center;
   }
-
+  
   footer {
     justify-content: center;
   }
