@@ -1,0 +1,367 @@
+/* ====================>> Global <<==================== */
+
+.body-style {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#arch--switch-activity-page-button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+
+#arch--switch-activity-page-button:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+
+#arch--switch-block {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100vh; left: 0;
+  z-index: 10000;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.arch--switch-block-animate {
+  animation: switch-arch-pages 2s 2 alternate;
+}
+
+@keyframes switch-arch-pages {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.arch--swipe-page-logo {
+  width: 30%;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+
+/* ====================>> Activity section <<==================== */
+
+
+#arch--activity-section {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#arch--activity-section-block {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.arch--background-slider::before,.arch--background-slider::after {
+	content: "";
+	position: absolute;
+}
+
+.arch--background-slider::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.arch--background-slider::before {
+	left: 0;
+	top: 0;
+}
+
+.arch--background-slider {
+	background: white;
+	overflow: hidden;
+	position: relative;
+  width: 120vw;
+  height: 140%;
+  margin-left: -7vw;
+  margin-top: -30vh;
+  transform: rotate(20deg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.arch--background-slider .arch--slide-track-up-1 {
+	animation: slide-up 40s linear infinite;
+	display: flex;
+  flex-direction: column;
+}
+
+.arch--background-slider .arch--slide-track-up-2 {
+	animation: slide-up 30s linear infinite;
+	display: flex;
+  flex-direction: column;
+}
+
+.arch--background-slider .arch--slide-track-down-1 {
+	animation: slide-down 30s linear infinite;
+	display: flex;
+  flex-direction: column;
+}
+
+.arch--background-slider .arch--slide-track-down-2 {
+	animation: slide-down 40s linear infinite;
+	display: flex;
+  flex-direction: column;
+}
+
+.arch--slide-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+@keyframes slide-up {
+	0% { 
+    transform: translateY(0); 
+  }
+
+	100% { 
+    transform: translateY(calc(-254px * 5)) 
+  }
+}
+
+@keyframes slide-down {
+	0% { 
+    transform: translateY(calc(-254px * 5)); 
+  }
+
+	100% { 
+    transform: translateY(0) 
+  }
+}
+
+#arch--switch-home-page-button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+
+#arch--switch-home-page-button:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+
+
+/* ====================>> Activity info <<==================== */
+
+
+#arch--activity-info {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 1080px;
+  height: 280px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  padding: 40px;
+}
+
+#arch--activity-info-block {
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+#arch--info-logo {
+  width: 100px;
+  height: auto;
+}
+
+#arch--activity-info-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#arch--activity-info-title div {
+  width: 100%;
+  margin-right: 5%;
+  margin-left: 2%;
+}
+
+.arch--super-list {
+  font-size: 20px;
+}
+
+.arch--list {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 4px;
+  padding: 0;
+}
+
+#arch--activity-info-block-content-list {
+  margin: 1.2vw 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#arch--switch-price-page-link {
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  position: absolute;
+  left: 88%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+}
+
+#arch--switch-price-page-link:hover {
+  gap: 20px;
+}
+
+
+/* ====================>> Adaptation <<==================== */
+
+
+@media screen and (max-width: 1250px) {
+  #arch--activity-info {
+    width: 100%;
+    height: 200px;
+  }
+
+  .arch--background-slider {
+    width: 130%;
+    margin-left: -15vw;
+  }
+
+  .arch--super-list {
+    font-size: 16px;
+  }
+
+  .arch--list {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .arch--background-slider {
+    width: 150%;
+    margin-left: -23vw;
+  }
+
+  #arch--activity-info {
+    padding: 20px;
+  }
+
+  .arch--slide-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  #arch--activity-info-block-content-list {
+    margin: 0.5vw 15px;
+  }
+
+  #arch--switch-price-page-link {
+    font-size: 18px;
+    left: 75%;
+  }
+
+  #arch--activity-info-block-content-list {
+    flex-direction: column;
+    margin-left: 45px;
+  }
+  
+  .arch--list-child {
+    display: none;
+  }
+
+  .arch--super-list {
+    margin: 0;
+    padding: 5px;
+  }
+
+  @keyframes slide-up {
+    0% { 
+      transform: translateY(0); 
+    }
+  
+    100% { 
+      transform: translateY(calc(-164px * 5)) 
+    }
+  }
+  
+  @keyframes slide-down {
+    0% { 
+      transform: translateY(calc(-164px * 5)); 
+    }
+  
+    100% { 
+      transform: translateY(0) 
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .arch--background-slider {
+    width: 180%;
+    margin-left: -35vw;
+  }
+
+  .arch--slide-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  #arch--info-logo {
+    width: 75px;
+    height: auto;
+  }
+
+  .arch--super-list {
+    font-size: 10px;
+  }
+
+  #arch--switch-price-page-link {
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+}
