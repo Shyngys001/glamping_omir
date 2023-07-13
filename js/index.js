@@ -3,6 +3,11 @@ let book = document.getElementById('book');
 let price = document.getElementById('price');
 let tour = document.getElementById('tour');
 let contact = document.getElementById('contact');
+let gen1 = document.getElementById('gen1');
+let book1 = document.getElementById('book1');
+let price1 = document.getElementById('price1');
+let tour1 = document.getElementById('tour1');
+let contact1 = document.getElementById('contact1');
 let shyn_Page1Foot_p = document.getElementById('shyn_Page1Foot_p');
 let shyn_Page1Foot1_num = document.getElementById('shyn_Page1Foot1_num');
 
@@ -36,6 +41,11 @@ function setLanguage(language) {
         price.textContent = 'Бағалар'
         tour.textContent = 'Турлар'
         contact.textContent = 'Байланысу'
+        gen1.textContent = 'Басты'
+        book1.textContent = 'Броньдау'
+        price1.textContent = 'Бағалар'
+        tour1.textContent = 'Турлар'
+        contact1.textContent = 'Байланысу'
 
         arch_text_activities = "ДЕМАЛЫС ІС-ШАРАЛАРЫ";
         arch_text_yachting = "Яхтинг";
@@ -61,6 +71,11 @@ function setLanguage(language) {
         price.textContent = 'Prices'
         tour.textContent = 'Tours'
         contact.textContent = 'Contact'
+        gen1.textContent = 'Home'
+        book1.textContent = 'Book'
+        price1.textContent = 'Prices'
+        tour1.textContent = 'Tours'
+        contact1.textContent = 'Contact'
 
         arch_text_activities = "ACTIVITIES";
         arch_text_yachting = "Yachting";
@@ -86,6 +101,11 @@ function setLanguage(language) {
         price.textContent = 'Цены'
         tour.textContent = 'Туры'
         contact.textContent = 'Контакты'
+        gen1.textContent = 'Главное'
+        book1.textContent = 'Бронировать'
+        price1.textContent = 'Цены'
+        tour1.textContent = 'Туры'
+        contact1.textContent = 'Контакты'
 
         arch_text_activities = "АКТИВНЫЙ ОТДЫХ";
         arch_text_yachting = "Яхтинг";
