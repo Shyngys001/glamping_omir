@@ -11,15 +11,24 @@
 <body>
      <!-- ========================================>> header <<======================================== -->
      <header>
-        <a id="arch--logo" href="#arch--first-content"><img src="img/output-onlinepngtools (2).png" alt="logo"></a>
+        <a id="arch--logo" href="#sec1"><img src="img/output-onlinepngtools (2).png" alt="logo"></a>
   
         <nav>
-          <a href="#arch--first-content">Главное</a>
-          <a href="#collection">Бронировать</a>
-          <a href="#s_page-space">Цены</a>
-          <a href="#p3">Туры</a>
-          <a href="#footer">Контакты</a>
+          <a id="gen" href="#arch--first-content">Главное</a>
+          <a id="book" href="#collection">Бронировать</a> 
+          <a id="price" href="#s_page-space">Цены</a>
+          <a id="tour" href="#p3">Туры</a>
+          <a id="contact" href="#footer">Контакты</a>
+
         </nav>
+        <div class="dropdown">
+          <button class="dropbtn" id="languageBtn">Ru</button>
+          <div class="dropdown-content">
+              <a href="#" onclick="setLanguage('Kz')">Kz</a>
+              <a href="#" onclick="setLanguage('En')">En</a>
+              <a href="#" onclick="setLanguage('Ru')">Ru</a>
+          </div>
+        </div>
   
         <div id="arch--burger">
           <i class="fa-solid fa-bars fa-2xl" style="color: var(--gold);" onclick="displayWindow()"></i>
@@ -28,19 +37,19 @@
               <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
             </button>
             <div>
-              <a href="#arch--first-content" onclick="closeWindow()">Главное</a>
+              <a id="gen" href="#arch--first-content" onclick="closeWindow()">Главное</a>
             </div>
             <div>
-              <a href="#collection" onclick="closeWindow()">Бронировать</a>
+              <a id="book" href="#collection" onclick="closeWindow()">Бронировать</a>
             </div>
             <div>
-              <a href="#s_page-space" onclick="closeWindow()">Цены</a>
+              <a id="price" href="#s_page-space" onclick="closeWindow()">Цены</a>
             </div>
             <div>
-              <a href="#p3" onclick="closeWindow()">Туры</a>
+              <a id="tour" href="#p3" onclick="closeWindow()">Туры</a>
             </div>
             <div>
-              <a href="#arch--contact" onclick="closeWindow()">Контакты</a>
+              <a id="contact" href="#arch--contact" onclick="closeWindow()">Контакты</a>
             </div>
           </div>
         </div>
@@ -49,10 +58,10 @@
 
 
     <section id="sec1">
-         <video autoplay loop muted>
-            <source src="https://dl.dropboxusercontent.com/s/rlvs7h8ogudxx3u/omirFashionWeek02.mp4" type="video/mp4">
-         </video>
-          
+      <video autoplay loop muted>
+        <source src="https://dl.dropboxusercontent.com/s/rlvs7h8ogudxx3u/omirFashionWeek02.mp4" type="video/mp4">
+      </video>
+      
         <div style="width: 50%;">
             <p class="shyn_OmirGlamping">O’MIR GLAMPING</p>
         </div>
@@ -62,7 +71,7 @@
             <div class="shyn_Page1Foot1">
                 <div class="shyn_Page1Foot1elements">
                     <i class='fa-solid fa-location-dot' style="color: gray;"></i>
-                    <p>Республика Казахстан
+                    <p id="shyn_Page1Foot_p">Республика Казахстан
                         Мангистауская область,
                         Мунайлинский район,
                         местность Кызылкум,
@@ -70,13 +79,13 @@
                     </p>
                 </div>
                 <div class="shyn_Page1Foot1elements">
-                    <a href="tel:87072888890">
-                        <i class='fa-solid fa-phone' style="color: gray;"></i>
-                    </a>
-                    <a href="tel:87072888890">
-                        <p>+7 707 288 88 90
-                        </p>
-                    </a>
+                  <a href="tel:87072888890">
+                    <i class='fa-solid fa-phone' style="color: gray;"></i>
+                  </a>
+                  <a href="tel:87072888890">
+                    <p id="shyn_Page1Foot1_num">+7 707 288 88 90
+                    </p>
+                  </a>
                 </div>
             </div>
             <div class="shyn_Page1Foot2">
@@ -88,10 +97,25 @@
     </section>
 
     <section id="shyn_sec2">
-      
+      <div class="shyn_otzyvy">
+        <div class="shyn_otzyvy1">
+            <i  id="shyn_i" class='fas fa-map-marked'></i>
+            <p>Идеальное место для медитацииб снять стрессб расствориться в природеб слушать пение птиц...</p>
+        </div>
+        <div class="shyn_otzyvy1">
+          <i  id="shyn_i"class='fas fa-campground'></i>
+          <p>Идеальное место для медитацииб снять стрессб расствориться в природеб слушать пение птиц...</p>
+        </div>
+        <div class="shyn_otzyvy1">
+          <i id="shyn_i" class='fas fa-map-marked'></i>
+          <p>Идеальное место для медитацииб снять стрессб расствориться в природеб слушать пение птиц...</p>
+        </div>
+      </div>
     </section>
+  
     
 </body>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <script src="js/index.js"></script>
 <script src="js/javascript.js"></script>
 
