@@ -10,7 +10,7 @@ switch_home_to_arch.addEventListener("click", function() {
   setTimeout(function() {
     body.classList.add("body-style");
     activity_page.style.display = "initial";
-  }, 1600);
+  }, 1650);
 
   setTimeout(function() {
     switch_arch_block.classList.remove("arch--switch-block-animate");
