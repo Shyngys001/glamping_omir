@@ -19,10 +19,11 @@ html{
     background-size: cover;
     object-fit: cover;
     position: relative;
-    background-image: url('../img/pic1.JPG');
+    /* background-image: url('../img/pic1.JPG'); */
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    
 }
 
 
@@ -32,8 +33,28 @@ html{
     color: var(--white);
     padding: 30px;
     padding-top: 60px;
-
 }
+
+.shyn_OmirGlamping {
+    opacity: 0;
+    animation-name: fade-in-out;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fade-in-out {
+    0%, 20.69% {
+      opacity: 0;
+      animation-delay: 1s;
+    }
+    13.79%, 93.1% {
+      opacity: 1;
+      animation-delay: 20s;
+    }
+  }
+  
+
 
 .shyn_main{
     width: 100%;
@@ -152,3 +173,15 @@ i{
         width: 60%;
     }
 }
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
