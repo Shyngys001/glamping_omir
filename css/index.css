@@ -275,16 +275,16 @@ i{
         align-items: center;
     }
 
-    .qr{
-        width: 60%;
-    }
-
     .shyn_otzyvy1 {
         height: 30vh;
     }
 
     .shyn_i {
         font-size: 15px;
+    }
+
+    .qr{
+        width: 60%;
     }
 }
 
