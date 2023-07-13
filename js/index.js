@@ -10,7 +10,9 @@ let tour1 = document.getElementById('tour1');
 let contact1 = document.getElementById('contact1');
 let shyn_Page1Foot_p = document.getElementById('shyn_Page1Foot_p');
 let shyn_Page1Foot1_num = document.getElementById('shyn_Page1Foot1_num');
-
+let shyn_otzyvy1 = document.getElementById('shyn_otzyvy1');
+let shyn_otzyvy2 = document.getElementById('shyn_otzyvy2');
+let shyn_otzyvy3 = document.getElementById('shyn_otzyvy3');
 
 let arch_text_activities = document.getElementById("arch--text-activities");
 let arch_text_yachting = document.getElementById("arch--text-yachting");
@@ -46,6 +48,10 @@ function setLanguage(language) {
         price1.textContent = 'Бағалар'
         tour1.textContent = 'Турлар'
         contact1.textContent = 'Байланысу'
+        shyn_otzyvy1.textContent = 'Бұл оңаша орындар табиғаттың қақ ортасында, қаланың қарбаласынан алыс орналасқан.'
+        shyn_otzyvy2.textContent = 'Біз сізге күнделікті уайымдарды ұмытып, толық демалуға болатын жайлы баспана ұсынамыз.'
+        shyn_otzyvy3.textContent = 'Медитация, стрессті жеңілдету, табиғатқа ену және құстардың әнін тыңдау үшін тамаша орын...'
+        shyn_Page1Foot_p.textContent = 'Қазақстан Республикасы Маңғыстау облысы, Мұнайлы ауданы, Қызылқұм жері, 2/27 учаскесі'
 
         arch_text_activities.textContent = "ДЕМАЛЫС ІС-ШАРАЛАРЫ";
         arch_text_yachting.textContent = "Яхтинг";
@@ -76,6 +82,10 @@ function setLanguage(language) {
         price1.textContent = 'Prices'
         tour1.textContent = 'Tours'
         contact1.textContent = 'Contact'
+        shyn_otzyvy1.textContent = 'These secluded corners are located far from the city noise and hustle, in the heart of nature.'
+        shyn_otzyvy2.textContent = 'We offer you a cozy sanctuary where you can forget about everyday worries and fully relax.'
+        shyn_otzyvy3.textContent = 'An ideal place for meditation, stress relief, immersing yourself in nature, and listening to the singing of birds...'
+        shyn_Page1Foot_p.textContent = 'Republic of Kazakhstan Mangystau region, Munailinsky district, Kyzylkum locality, plot 2/27'
 
         arch_text_activities.textContent = "ACTIVITIES";
         arch_text_yachting.textContent = "Yachting";
@@ -106,7 +116,11 @@ function setLanguage(language) {
         price1.textContent = 'Цены'
         tour1.textContent = 'Туры'
         contact1.textContent = 'Контакты'
-
+        shyn_otzyvy1.textContent = 'Эти уединенные уголки находятся вдали от городского шума и суеты, в самом сердце природы.'
+        shyn_otzyvy2.textContent = 'Предлагаем вам уютное убежище, где вы сможете забыть о повседневных заботах и полностью расслабиться.'
+        shyn_otzyvy3.textContent = 'Идеальное место для медитации, снять стресс, расствориться в природе, слушать пение птиц...'
+        shyn_Page1Foot_p.textContent = 'Республика Казахстан Мангистауская область, Мунайлинский район, местность Кызылкум, участок 2/27'
+      
         arch_text_activities.textContent = "АКТИВНЫЙ ОТДЫХ";
         arch_text_yachting.textContent = "Яхтинг";
         arch_text_diving.textContent = "Дайвинг";
