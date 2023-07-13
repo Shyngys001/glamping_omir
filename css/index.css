@@ -1,8 +1,15 @@
 body{
-    background-image: url('../img/pic1_version2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
+  
+}
+
+html{
+    --white: white;
+    --black: black;
+    --gray: gray;
+}
+
+#shyn--logo {
+    width: 50%;
 }
 
 #sec1{
@@ -12,13 +19,17 @@ body{
     background-size: cover;
     object-fit: cover;
     position: relative;
+    background-image: url('../img/pic1.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 }
 
 
 .shyn_OmirGlamping{
     font-size: 50px;
     position: relative;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     padding: 30px;
     padding-top: 60px;
 
@@ -54,7 +65,7 @@ body{
     display: flex;
     gap: 10px;
     align-items: start;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     margin-top: 20px;
 }
 
@@ -85,6 +96,16 @@ i{
     padding-right: 50px;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 800px){  
