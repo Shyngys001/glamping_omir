@@ -12,7 +12,7 @@ switch_home_to_arch.addEventListener("click", function() {
     body.classList.add("body-style");
     activity_page.style.display = "initial";
     page_header.style.display = "none";
-  }, 1750);
+  }, 1650);
 
   setTimeout(function() {
     switch_arch_block.classList.remove("arch--switch-block-animate");
@@ -25,7 +25,7 @@ switch_arch_to_home.addEventListener("click", function() {
   setTimeout(function() {
     body.classList.remove("body-style");
     activity_page.style.display = "none";
-    page_header.style.display = "initial";
+    page_header.style.display = "flex";
   }, 2000);
 
   setTimeout(function() {
