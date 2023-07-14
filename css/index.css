@@ -311,7 +311,7 @@ video {
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #eebdbd, #ff7300, #fffd98, #a3bc9a, #c4b58a, #d8d9dc, #d0c5de, #dca518, #fbe384);
+    background: linear-gradient(45deg, #eebdbd, #c5a082, #fffd98, #a3bc9a, #c4b58a, #d8d9dc, #d0c5de, #e4ca88, #fbe384);
     position: absolute;
     top: -2px;
     left:-2px;
