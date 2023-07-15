@@ -130,6 +130,7 @@ function setLanguage(language) {
         chainye.textContent = 'Tea accessories';
         wifi.textContent = 'Wi-Fi';
         pozvonit.textContent = 'Contact';
+        glamping_standard.textContent = 'Standard glamping'
 
         gen.textContent = 'Home'
         book.textContent = 'Book'
