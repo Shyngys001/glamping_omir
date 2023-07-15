@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- ========================================>> Shyn link <<======================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="img/output-onlinepngtools (2).png" type="image/x-icon">
-    <!-- ========================================>> /Shyn link <<======================================== -->
+        <!-- ========================================>> /Shyn link <<======================================== -->
 
     
     <!-- ========================================>> Arch link <<======================================== -->
@@ -33,7 +38,7 @@
       <nav>
         <a id="gen" href="#arch--first-content">Главное</a>
         <a id="book" href="#collection">Бронировать</a>
-        <a id="price" href="#s_page-space">Цены</a>
+        <a id="price" href="#shyn_prices">Цены</a>
         <a id="tour" href="#p3">Туры</a>
         <a id="contact" href="#footer">Контакты</a>
       </nav>
@@ -60,7 +65,7 @@
             <a id="book1" href="#collection" onclick="closeWindow()">Бронировать</a>
           </div>
           <div>
-            <a id="price1" href="#s_page-space" onclick="closeWindow()">Цены</a>
+            <a id="price1" href="#shyn_prices" onclick="closeWindow()">Цены</a>
           </div>
           <div>
             <a id="tour1" href="#p3" onclick="closeWindow()">Туры</a>
@@ -125,6 +130,77 @@
         <div class="shyn_otzyvy1 glow-on-hover">
           <i id="shyn_i" class='fas fa-first-aid'></i>
           <p id="shyn_otzyvy3">Идеальное место для медитации, снять стресс, расствориться в природе, слушать пение птиц...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shyn_prices">
+      <div class="shyn_cards flip-card">
+        <div class="flip-card-inner">
+          <div class="shyn_card flip-card-front">
+            <div class="shyn_cards_content" >
+              <video class="shyn_cards_content video_card" autoplay loop muted >
+                <source src="movies/IMG_4927.mp4" type="video/mp4">
+              </video>
+                <h1 id="glamping_standard">Глэмпинг стандард</h1>
+                <div class="glamping_standard_cat">
+                  <p id="vzrosl_deti">2 взрослых | 2 детей</p>
+                  <p id="glamping_4mest">Глэмпинг стандард 4-х местный</p>
+                </div>
+                <div class="shyn_dop_uslugugi">
+                  <p id="shyn_dopusl">Дополнительные услуги</p>
+                  <div class="span_p">
+                    <span id="span" class='bi bi-check-circle-fill'></span>&nbsp;&nbsp;&nbsp;<p id="vhod1">Вход взрослым --- 6000₸</p>
+                  </div>
+                  <div class="span_p">
+                    <span id="span" class='bi bi-check-circle-fill'></span>&nbsp;&nbsp;&nbsp;<p id="vhod2">Вход детям с 6 до 12 лет  ---  3000₸</p>
+                  </div>
+                  <div class="span_p">
+                    <span id="span" class='bi bi-check-circle-fill'></span>&nbsp;&nbsp;&nbsp;<p id="vhod3">Вход детям до 6 лет  ---  Бесплатно</p>
+                  </div>
+                  <div class="span_p">
+                    <span id="span" class='bi bi-check-circle-fill'></span>&nbsp;&nbsp;&nbsp;<p id="vhod4">Баня для гостей глэмпинга  ---  15000₸</p>
+                  </div>
+                  <div class="span_p">
+                    <span id="span" class='bi bi-check-circle-fill'></span>&nbsp;&nbsp;&nbsp;<p id="vhod5">Баня для гостей без глэмпинга  ---  120000₸</p>
+                  </div>
+                </div>
+            </div>
+            <button><span class="bi bi-hand-index-thumb"></span><p id="ot_120">от 120.000₸</p></button>
+          </div>
+
+
+          <div class="shyn_card flip-card-back">
+            <div class="shyn_aboutprice">
+              <img class=" shyn_cards_img" src="img/output-onlinepngtools (1).png">
+            </div>
+            
+            <h1 id="v_stoimost">Входит</h1>
+            <div class="shyn_stoimost">
+              <div class="gift_p">
+              <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="zavtrak">  Завтрак</p>
+              </div>
+              <div class="gift_p">
+                <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="bannye"> Банные и косметические принадлежности</p>
+              </div>
+              <div class="gift_p">
+                <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="vzroslyh"> 3 взрослых бассейна и 1 детский</p>
+              </div>
+              <div class="gift_p">
+                <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="zona"> Зона для йоги, пляж, парковка, шезлонги</p>
+              </div>
+              <div class="gift_p">
+                <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="grill"> Гриль зона на террасе, гамак</p>
+              </div>
+              <div class="gift_p">
+                <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="chainye"> Чайные принадлежности</p>
+              </div>
+              <div class="gift_p">
+                <span class="bi bi-gift"></span>&nbsp;&nbsp;&nbsp;<p id="wifi"> Wi-fi</p>
+              </div>
+            </div>
+            <button><p id="pozvonit">Связаться</p></button>
+          </div>
         </div>
       </div>
     </section>
@@ -249,7 +325,7 @@
               </ul>
             </div>
   
-            <a id="arch--switch-price-page-link" href="#">
+            <a id="arch--switch-price-page-link" href="#shyn_prices">
               <p id="arch--text-price">Цены</p> <i class="fa-solid fa-arrow-right fa-lg arch--switch-price-page-link-arrow" style="color: #000000;"></i>
             </a>
           </div>
@@ -285,7 +361,7 @@
             <ul>
               <li class="arch--footer-links-list"><a class="arch--footer-link" id="gen2" href="#arch--first-content">Главное</a></li>
               <li class="arch--footer-links-list"><a class="arch--footer-link" id="book2" href="#collection">Бронировать</a></li>
-              <li class="arch--footer-links-list"><a class="arch--footer-link" id="price2" href="#s_page-space">Цены</a></li>
+              <li class="arch--footer-links-list"><a class="arch--footer-link" id="price2" href="#shyn_prices">Цены</a></li>
               <li class="arch--footer-links-list"><a class="arch--footer-link" id="tour2" href="#p3">Туры</a></li>
             </ul>
           </div>
