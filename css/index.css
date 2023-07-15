@@ -366,7 +366,7 @@ i{
     width: 60%;
     margin: 0 auto;
     height: 40%;
-    border: solid 1px var(--gold);
+    border: solid 2px var(--gold);
     text-align: left;
     padding: 10px;
     margin-top: 50px;
@@ -402,12 +402,37 @@ i{
 
 .span_p, .gift_p {
     display: flex;
+    border-radius: 5px;
+    margin-top: 5px;
+    align-items: center;
+    color: #c5a082;
+    
+}
+
+.gift_p {
+    margin-top: 10px;
+    background-color: #0000004f;
+}
+
+.gift_p span{
+    color: #ffad6a;
+    margin: 0;
+    font-weight: 900;
+}
+
+.gift_p p{
+    margin: 0;
+    color: #f1b691;
+    font-weight: 900;
 }
 
 .video_card {
     height: 80vh;
 }
 
+.flip-card-back {
+    background-color: #b58b2fe7;
+}
 
 @media(max-width: 800px){  
     .shyn_card button {
@@ -456,6 +481,7 @@ i{
 
     .shyn_stoimost p, .shyn_stoimost span {
         font-size: 12px;
+        margin: 0;
     }
 
     .shyn_card {
