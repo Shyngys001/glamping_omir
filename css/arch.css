@@ -237,6 +237,119 @@
   gap: 20px;
 }
 
+/* ====================>> Footer <<==================== */
+
+#footer {
+  margin-top: auto;
+  width: 90%;
+  padding: 2% 5%;
+  background-color: #1d1d1d;
+  display: flex;
+}
+
+#arch--footer-block {
+  width: 100%;
+}
+
+#arch--footer-line {  
+  width: 100%;
+  margin: 20px 0;
+}
+
+.arch--footer-text {
+  color: #fff;
+}
+
+#arch--footer-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#arch--footer-title-text {
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#arch--footer-title-text-info {
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+}
+
+#arch--footer-location-info {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+#arch--footer-contact-block {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+#arch--footer-contact {
+  margin-left: 10px;
+  width: 142px;
+}
+
+#arch--footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#arch--footer-content-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.arch--footer-links-list {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.arch--footer-link {
+  font-family: 'Archivo Black', sans-serif;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.arch--footer-link:hover {
+  color: rgb(192, 180, 89);
+}
+
+#arch--footer-content-icons {
+  display: flex;
+  align-items: center;
+}
+
+.arch--footer-content-icon {
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.5s;
+}
+
+.arch--footer-content-icon:hover {
+  transform: scale(1.3);
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+}
+
+#copyright p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #666666;
+  margin-left: 5px;
+}
+
 
 /* ====================>> Adaptation <<==================== */
 
@@ -300,6 +413,10 @@
     padding: 5px;
   }
 
+  .arch--footer-link {
+    font-size: 12px;
+  }
+
   @keyframes slide-up {
     0% { 
       transform: translateY(0); 
@@ -318,6 +435,31 @@
     100% { 
       transform: translateY(0) 
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #arch--footer-title {
+    flex-direction: column;
+  }
+
+  #arch--footer-title-text-info {
+    max-width: 100%;
+  }
+
+  #arch--footer-contact-block {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  #arch--footer-content {
+    height: 100px;
+    flex-direction: column;
+  }
+
+  #arch--footer-content-links ul, #arch--footer-content-icons, #copyright {
+    justify-content: center;
   }
 }
 
