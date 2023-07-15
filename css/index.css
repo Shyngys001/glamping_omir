@@ -222,6 +222,7 @@ i{
 .shyn_cards {
     display: flex;
     height: 50vh;
+    cursor: pointer;
 }
 
 .shyn_card {
