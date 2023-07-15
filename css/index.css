@@ -279,7 +279,6 @@ i{
     background-color: transparent;
     width: 40%;
     height: 80vh;
-    border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin-top: 500px;    
   }
