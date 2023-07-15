@@ -406,7 +406,9 @@ i{
 
 
 @media(max-width: 800px){  
-  
+    .shyn_card button {
+        padding: 0;
+    }
     .shyn_dop_uslugugi p, #span {
         font-size: 10px;
     }
