@@ -1,5 +1,5 @@
 let body = document.getElementById("body");
-let switch_home_to_arch = document.getElementById("arch--switch-activity-page-button");
+let switch_home_to_arch = document.getElementById("tour");
 let switch_arch_to_home = document.getElementById("arch--switch-home-page-button");
 let switch_arch_block = document.getElementById("arch--switch-block");
 let activity_page = document.getElementById("arch--activity-section");
