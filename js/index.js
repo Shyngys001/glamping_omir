@@ -79,7 +79,7 @@ function setLanguage(language) {
         arch_text_bbq.textContent = "ГРИЛЬ ЖӘНЕ БАРБЕКЮ АЙМАҒЫ";
         arch_text_sauna.textContent = "СКАНДИНАВИЯ МОНШАСЫ";
         arch_text_price.textContent = "БАҒАСЫ";
-        arch_footer_location_info = "Қазақстан Республикасы Маңғыстау облысы, Мұнайлы ауданы, Қызылқұм жері, 2/27 учаскесі";
+        arch_footer_location_info.textContent = "Қазақстан Республикасы Маңғыстау облысы, Мұнайлы ауданы, Қызылқұм жері, 2/27 учаскесі";
         
     } else if (language === 'En') {
         gen.textContent = 'Home'
@@ -118,7 +118,7 @@ function setLanguage(language) {
         arch_text_bbq.textContent = "GRILL AND BBQ AREA";
         arch_text_sauna.textContent = "SCANDINAVIAN SAUNA";
         arch_text_price.textContent = "PRICE";
-        arch_footer_location_info = "Republic of Kazakhstan Mangystau region, Munailinsky district, Kyzylkum locality, plot 2/27";
+        arch_footer_location_info.textContent = "Republic of Kazakhstan Mangystau region, Munailinsky district, Kyzylkum locality, plot 2/27";
 
     } else if (language === 'Ru') {
         gen.textContent = 'Главное'
@@ -157,6 +157,6 @@ function setLanguage(language) {
         arch_text_bbq.textContent = "ГРИЛЬ И BBQ ЗОНА";
         arch_text_sauna.textContent = "СКАНДИНАВСКИЕ БАНИ";
         arch_text_price.textContent = "Цены";
-        arch_footer_location_info = "Республика Казахстан Мангистауская область, Мунайлинский район, местность Кызылкум, участок 2/27";
+        arch_footer_location_info.textContent = "Республика Казахстан Мангистауская область, Мунайлинский район, местность Кызылкум, участок 2/27";
     }
 }
