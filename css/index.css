@@ -166,6 +166,7 @@ i{
     height: 100vh;
     width: 100%;
     position: relative;
+    align-items: start;
 }
 
 .shyn_otzyvy {
@@ -204,8 +205,273 @@ i{
 
 
 
+#shyn_i {
+    color: var(--gray);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#shyn_prices {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.shyn_cards {
+    display: flex;
+    height: 50vh;
+}
+
+.shyn_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 15px;
+  width: 20%;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.363);
+
+}
+
+.shyn_cards_content {
+    border-radius: 15px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.shyn_card button {
+  border: none;
+  outline: 0;
+  padding: 22px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: var(--gold);
+}
+
+.shyn_card button:hover {
+  opacity: 0.7;
+}
+
+.shyn_cards_content {
+    width: 100%;
+    height: 50vh;
+}
+
+.flip-card {
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 40%;
+    height: 80vh;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-top: 500px;    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+
+  #shyn_cost {
+    font-size: 50px;
+  }
+
+
+.shyn_cards_img {
+    width: 25%;
+    height: 15vh;
+    margin: 0 auto;
+
+}
+
+.shyn_aboutprice {
+    text-align: center;
+    display: flex;
+
+}
+
+
+
+.shyn_stoimost {
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+
+#glamping_standard, #v_stoimost {
+    color: #000;
+}
+
+
+
+.shyn_stoimost p, .shyn_stoimost span{
+    margin-top: 15px;
+    color: #000 ;
+}
+
+.glamping_standard_cat {
+    width: 60%;
+    margin: 0 auto;
+    height: 40%;
+    border: solid 1px var(--gold);
+    text-align: left;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.glamping_standard_cat :nth-child(1){
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.glamping_standard_cat :nth-child(2){
+    font-size: 30px;
+    width: 70%;
+}
+
+.shyn_dop_uslugugi {
+    text-align: left;
+    width: 69%;
+    margin: 0 auto;
+}
+
+.shyn_dop_uslugugi p, #span {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+
+.shyn_dop_uslugugi :nth-child(1) {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.span_p, .gift_p {
+    display: flex;
+}
+
+.video_card {
+    height: 80vh;
+}
+
 
 @media(max-width: 800px){  
+  
+    .shyn_dop_uslugugi p, #span {
+        font-size: 10px;
+    }
+    
+    .shyn_dop_uslugugi :nth-child(1) {
+        margin-top: 3px;
+        font-size: 15px;
+    }
+    .glamping_standard_cat {
+        margin-top: 5px;
+    }
+    .glamping_standard_cat :nth-child(1){
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .glamping_standard_cat :nth-child(2){
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .shyn_stoimost p, .shyn_stoimost span{
+        margin-top: 10px;
+    }
+    
+    .shyn_cards_img {
+        width: 32%;
+        height: 10vh;
+    
+    }
+    
+    .shyn_aboutprice {
+        text-align: start;
+    }
+    
+    
+    .flip-card {
+        margin-top: 500px;
+    }
+
+    .shyn_stoimost p, .shyn_stoimost span {
+        font-size: 12px;
+    }
+
+    .shyn_card {
+        width: 100%;
+      }
+    .shyn_cards {
+        height: 60vh;
+        margin-top: 100px;
+    }
+    .flip-card {
+        width: 80%;
+    }
+
+    #shyn_prices {
+        height: 90vh;
+        margin-top: 150px;
+    }
+
+    .shyn_cards_content {
+        width: 100%;
+        height: 30vh;
+    }
+
     #shyn_i {
         color: white;
         font-size: 35px;
@@ -256,6 +522,9 @@ i{
         font-size: 15px;
         
     }
+    .video_card {
+        height: 60vh;
+    }
 }
 
 
@@ -267,7 +536,20 @@ i{
     }
 }
 
-
+@media(min-height: 1000px) {
+    .shyn_cards, .shyn_card {
+        height: 50vh;
+    }
+    .shyn_cards_content {
+        height: 20vh;
+    }
+    .shyn_otzyvy {
+        left: 12%;
+    }
+    .shyn_cards {
+        width: 80%;
+    }
+}
 
 @media(max-height: 450px){  
     .shyn_Page1Foot1{
@@ -291,6 +573,34 @@ i{
     .shyn_otzyvy {
         width: 80%;
         left: 2%;
+        height: 100vh;
+        padding: 0;
+    }
+
+    #shyn_sec2 {
+        height: 200vh;
+    }
+    .shyn_cards {
+        width: 350px;
+        height: 80vh;
+        margin-top: 200px;
+    }
+    .shyn_card h1{
+       font-size: 30px;
+    }
+
+    .shyn_cards_img {
+        width: 20%;
+    }
+
+    .shyn_cards_content {
+        height: 40vh;
+    }
+    .shyn_stoimost p, .shyn_stoimost span{
+        margin-top: 6px;
+    }
+    .video_card {
+        height: 80vh;
     }
 }
 
