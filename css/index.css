@@ -169,9 +169,7 @@ i{
 }
 
 .shyn_otzyvy {
-    position: absolute;
     display: flex;
-    bottom: 0;
     padding: 50px;
     justify-content: space-between;
 }
