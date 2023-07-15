@@ -351,6 +351,10 @@ i{
     color: #000;
 }
 
+#glamping_standard {
+    
+}
+
 
 
 .shyn_stoimost p, .shyn_stoimost span{
@@ -409,6 +413,7 @@ i{
     .shyn_card button {
         padding: 0;
     }
+
     .shyn_dop_uslugugi p, #span {
         font-size: 10px;
     }
