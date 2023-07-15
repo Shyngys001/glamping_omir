@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/monti.css" />
+
+
+    <title>Omir Glamping</title>
+</head>
+<body>
+    
+    <header id="home-page-header">
+        <a id="arch--logo" href="#sec1"><img src="img/output-onlinepngtools (2).png" alt="logo"/></a>
+  
+        <nav>
+          <a id="gen" href="index.html">Главное</a>
+          <a id="book" href="book.html">Бронировать</a>
+          <a id="price" href="#s_page-space">Цены</a>
+          <a id="tour" href="#p3">Туры</a>
+          <a id="contact" href="#footer">Контакты</a>
+        </nav>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="dropdown">
+          <button class="dropbtn" id="languageBtn">Ru</button>
+          <div class="dropdown-content">
+            <a href="#" onclick="setLanguage('Kz')">Kz</a>
+            <a href="#" onclick="setLanguage('En')">En</a>
+            <a href="#" onclick="setLanguage('Ru')">Ru</a>
+          </div>
+        </div>
+  
+        <div id="arch--burger">
+          <i class="fa-solid fa-bars fa-2xl" style="color: var(--gold)" onclick="displayWindow()"></i>
+          <div id="arch--burger-content">
+            <button id="arch--close-burger" onclick="closeWindow()">
+              <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff"></i>
+            </button>
+            <div>
+              <a id="gen1" href="#arch--first-content" onclick="closeWindow()">Главное</a>
+            </div>
+            <div>
+              <a id="book1" href="#collection" onclick="closeWindow()">Бронировать</a> 
+            </div>
+            <div>
+              <a id="price1" href="#s_page-space" onclick="closeWindow()">Цены</a>
+            </div>
+            <div>
+              <a id="tour1" href="#p3" onclick="closeWindow()">Туры</a>
+            </div>
+            <div>
+              <a id="contact1" href="#arch--contact" onclick="closeWindow()">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </header> 
+  
+      <div class="monti-main">
+        <center>
+          <h1>BOOKING HOTEL</h1>
+        </center>
+      <!-- <div class="monti-up-text">
+        <p>С помощью приведенной ниже формы вы можете забронировать наши номера в режиме онлайн и получить гарантированную бронь.</p>
+      </div> -->
+      
+      <section class="monti">
+        <form action="/nodepode.html" method="post" id="monti-form">
+          <!-- <center> -->
+            <div class="monti-input-header">
+              <center>
+              <h1>Выберите даты заезда, выезда и количество гостей</h1>
+              <div class="monti-line"></div>
+            </center>
+            </div>
+          <div class="monti-block">
+            <div>
+              <p>Arrive Date</p>
+              <input type="date" class="monti-date-input" name="adate" id="arrive-date">
+            </div>
+            <div>
+              <p>Leave Date</p>
+              <input type="date" class="monti-date-input" name="ldate" id="leave-date">
+            </div>
+          </div>
+          
+          <div class="monti-block">
+                <div>
+                  <p>Full name</p>
+                  <input type="text"  placeholder="Full Name" class="monti-name-input" name="fname">
+                </div>
+                <div>
+                  <p>Phone Number</p>
+                  <input type="text"  placeholder="+77()" class="monti-name-input" name="pnumber">
+                </div>
+          </div>
+             <center>
+             <button type="submit" class="monti-name-input">Find</button>
+            </center>
+      </div>
+</form>
+</section>
+</div>
+</body>
+<!-- ========================================>> monti script <<======================================== -->
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+  var arriveDatetimeInput = document.getElementById('arrive-date');
+  var leaveDatetimeInput = document.getElementById('leave-date')
+  var currentDateTime = new Date();
+  var arriveDate =  currentDateTime.getFullYear() + "-" + ('0' + (currentDateTime.getMonth() + 1)).slice(-2) + "-" + ('0' + currentDateTime.getDate()).slice(-2);
+  var leaveDate =  currentDateTime.getFullYear() + "-" + ('0' + (currentDateTime.getMonth() + 1)).slice(-2) + "-" + ('2' + (currentDateTime.getDate() + 3)).slice(-2);
+  arriveDatetimeInput.value = arriveDate;
+  leaveDatetimeInput.value = leaveDate;
+});
+</script>
+<!-- ========================================>> /monti script <<======================================== -->
+
+</html>

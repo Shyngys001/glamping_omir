@@ -1,0 +1,180 @@
+:root {
+    --size: 1vw + 1vh;
+    --white: #ffffff;
+    --gray: #333333;
+    --main-color: #f7f7f7;
+    --content-color: #9fa2a4;
+    --gold: rgb(192, 180, 89);
+  }
+
+.monti-section {
+    color: white;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "Lora",Georgia,serif;
+}
+
+.monti-section > form {
+    display: flex;
+    justify-content: space-around;
+
+    height: 70px;
+}
+
+.monti-section > form > h1 {
+    color: white;
+    margin: auto 0;
+    font-size: 25px;
+    font-family: "Lora",Georgia,serif;
+    font-weight: normal;
+}
+
+.monti-section > form > div{
+    margin: auto 0;
+    width: 25%;
+}
+.monti-input {
+    background-color: var(--white);
+    align-items: center;
+    height: 40px;
+    width: 100%;    
+    margin: 0 auto;
+    border-radius:5px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+
+.monti-section > form > button {
+    height: 40px;
+    width: 24%;
+    border-radius: 20px;
+    border: none;
+    margin: auto 0;
+    background-color: var(--gold);
+}
+
+.monti-section > form > button:hover {
+    background-color: #ffff7f1f;
+}
+
+.monti-book-header {
+    margin: 0 auto;
+    width: 55%;
+
+}
+.monti-book-header > center > h1 {
+    width: 100%;
+    color: var(--white);
+    font-family: "Lora",Georgia,serif;
+}
+
+.monti-book-section {
+    padding-top: 10px   ;
+    background-color: #ffffff27;
+    border-radius: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.monti-main > center > h1 {
+    padding-top: 15vh;
+    color: black;
+    margin: 0 auto;
+    font-family: "Lora",Georgia,serif;
+}
+.monti{
+    width: 70%;
+    border-radius: 15px;
+    border: none;
+    background: #6f6650;
+    margin: 0 auto; 
+    padding: 30px 0;   
+    margin-top: 30px;
+}
+
+.monti-up-text {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.monti-up-text > p{
+    width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.monti-block {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-top: 10px;
+}
+.monti-second-block {
+    display: flex;
+}
+#monti-form {
+    width: 70%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+p{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #bbbbbb;
+    font-size: 18px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: black;
+
+}
+
+.monti-date-input {
+    width: 300px;
+    height: 40px;
+    font-weight: 600;
+    font-size: medium;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+
+.monti-name-input {
+    width: 300px;
+    height: 40px;
+    font-weight: 600;
+    font-size: medium;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+.monti-input-header > center > h1{
+    color: #bbbbbb;
+    font-size: 25px;
+    font-family: Almarai-Regular,Open Sans,Arial,sans-serif;
+    font-weight: 400;
+}
+
+button {
+    border-radius: 12px;
+    border: none;
+    margin-top: 25px;
+    background-color: var(--gold);
+}
+
+.monti-line {
+    width: 100%;
+    height: 1px;
+    background-color: #a0a0a0;
+    margin: 5px;
+}

@@ -1,0 +1,304 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --white: white;
+    --black: black;
+    --gray: gray;
+}
+.dropbtn {
+    background-color: var(--gold);
+    width: 50px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 2px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--gold);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--gold);
+}
+
+#shyn--logo {
+    width: 50%;
+}
+
+#sec1{
+    /* background-image: url('../img/pic1.JPG'); */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    /* background-image: url('../img/pic1.JPG'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+
+
+.shyn_OmirGlamping{
+    font-size: 50px;
+    position: relative;
+    color: var(--white);
+    padding: 30px;
+    padding-top: 90px;
+}
+
+.shyn_OmirGlamping {
+    opacity: 0;
+    animation-name: fade-in-out;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fade-in-out {
+    0%, 20.69% {
+      opacity: 0;
+      animation-delay: 1s;
+    }
+    13.79%, 93.1% {
+      opacity: 1;
+      animation-delay: 20s;
+    }
+  }
+  
+
+
+.shyn_main{
+    width: 100%;
+    position: relative;
+}
+
+.shyn_main img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.shyn_Page1Foot{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shyn_Page1Foot1{
+    padding: 50px;
+    width: 15%;
+    align-items: center;
+
+}
+
+
+.shyn_Page1Foot1elements{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.shyn_Page1Foot1elements p{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+i{
+    font-size: 150%;
+}
+
+.qr_img{
+    width: 100%;
+    position: relative;
+}
+
+.qr{
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.shyn_Page1Foot2{
+    width: 150px;
+    right: 0;
+    text-align: center;
+    padding-right: 50px;
+    align-items: center;
+}
+
+
+#shyn_sec2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.shyn_otzyvy {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.shyn_otzyvy1 {
+    display: block;
+    width: 30%;
+    background-color: #f9f9f931;
+    border-radius: 20px; 
+    cursor: pointer;
+    text-align: center;
+    transition: transform 1.5s ease; 
+}
+
+.shyn_otzyvy1:hover {
+    transform: scale(1.13);
+}
+
+
+.shyn_otzyvy1 p{
+    font-size: 28px;
+    color: white;
+}
+
+
+
+#shyn_i {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media(max-width: 800px){  
+    #shyn_i {
+        color: white;
+        font-size: 35px;
+    }
+    
+    header {
+        justify-content: space-between;
+    }
+
+    .shyn_Page1Foot1elements p{
+        font-size: 11px;
+        font-weight: 100;
+    }
+
+    .shyn_Page1Foot1{
+        width: 80%;
+    }
+    
+    .shyn_Page1Foot2{
+        align-items: center;
+    }
+
+    .shyn_Page1Foot1{
+        padding: 50px;
+        width: 25%;
+        align-items: center;
+    
+    }
+
+    .shyn_otzyvy {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        height: 40vh;
+    }
+
+    .shyn_otzyvy1 {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 20vh;
+    }
+
+
+
+    .shyn_otzyvy1 p{
+        font-size: 18px;
+        
+    }
+}
+
+
+@media(max-width: 450px){  
+    .shyn_Page1Foot1{
+        padding: 50px;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+
+@media(max-height: 450px){  
+    .shyn_Page1Foot1{
+        padding: 50px;
+        width: 30%;
+        align-items: center;
+    }
+
+    .shyn_otzyvy1 {
+        height: 30vh;
+        width: 60%;
+    }
+
+    .shyn_i {
+        font-size: 15px;
+    }
+
+    .qr{
+        width: 60%;
+    }
+}
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
