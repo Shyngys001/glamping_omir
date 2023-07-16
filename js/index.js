@@ -61,7 +61,7 @@ let arch_text_price = document.getElementById("arch--text-price");
 
 function setLanguage(language) {
     // Update the button text with the selected language
-    document.getElementById('dropdown-button').innerText = language;
+    document.getElementById('languageBtn').innerText = language;
     
     if (language === 'Kz') {
         vzroslDeti.textContent = '2 ересек / 2 бала';
