@@ -32,6 +32,11 @@ let chainye = document.getElementById('chainye');
 let wifi = document.getElementById('wifi');
 let pozvonit = document.getElementById('pozvonit');
 let glamping_standard = document.getElementById('glamping_standard');
+let followustext = document.getElementById('follow-us-text');
+let gen2 = document.getElementById('gen2');
+let book2 = document.getElementById('book2');
+let price2 = document.getElementById('price2');
+let tour2 = document.getElementById('tour2');
 
 
 let arch_text_activities = document.getElementById("arch--text-activities");
@@ -53,9 +58,10 @@ let arch_text_sauna = document.getElementById("arch--text-sauna");
 let arch_text_price = document.getElementById("arch--text-price");
 
 
+
 function setLanguage(language) {
     // Update the button text with the selected language
-    document.getElementById('languageBtn').innerText = language;
+    document.getElementById('dropdown-button').innerText = language;
     
     if (language === 'Kz') {
         vzroslDeti.textContent = '2 ересек / 2 бала';
@@ -77,7 +83,8 @@ function setLanguage(language) {
         wifi.textContent = 'Wi-fi';
         pozvonit.textContent = 'Байланысу';
         glamping_standard.textContent = 'Глампинг стандарты'
-
+        followustext.textContent = 'Бізбен болыңыз'
+        
         gen.textContent = 'Басты'
         book.textContent = 'Броньдау'
         price.textContent = 'Бағалар'
@@ -92,6 +99,11 @@ function setLanguage(language) {
         shyn_otzyvy2.textContent = 'Біз сізге күнделікті уайымдарды ұмытып, толық демалуға болатын жайлы баспана ұсынамыз.'
         shyn_otzyvy3.textContent = 'Медитация, стрессті жеңілдету, табиғатқа ену және құстардың әнін тыңдау үшін тамаша орын...'
         shyn_Page1Foot_p.textContent = 'Қазақстан Республикасы Маңғыстау облысы, Мұнайлы ауданы, Қызылқұм жері, 2/27 учаскесі'
+
+        gen2.textContent = 'Басты'
+        book2.textContent = 'Броньдау'
+        price2.textContent = 'Бағалар'
+        tour2.textContent = 'Турлар'
 
         arch_text_activities.textContent = "ДЕМАЛЫС ІС-ШАРАЛАРЫ";
         arch_text_yachting.textContent = "Яхтинг";
@@ -131,6 +143,7 @@ function setLanguage(language) {
         wifi.textContent = 'Wi-Fi';
         pozvonit.textContent = 'Contact';
         glamping_standard.textContent = 'Standard glamping'
+        followustext.textContent = 'follow us'
 
         gen.textContent = 'Home'
         book.textContent = 'Book'
@@ -185,6 +198,7 @@ function setLanguage(language) {
         wifi.textContent = 'Wi-fi';
         pozvonit.textContent = 'Связаться';
         glamping_standard.textContent = 'Глэмпинг Стандард'
+        followustext.textContent = 'Будьте с нами'
 
         gen.textContent = 'Главное'
         book.textContent = 'Бронировать'
